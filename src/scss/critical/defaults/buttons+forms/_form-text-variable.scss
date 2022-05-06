@@ -1,0 +1,7 @@
+// scss-docs-start form-text-variable
+$form-text-margin-top:                  .25rem;
+$form-text-font-size:                   $small-font-size;
+$form-text-font-style: null;
+$form-text-font-weight: $font-weight-thin;
+$form-text: mix($gray-400, $primary, $color-interval);
+// scss-docs-end form-text-variable

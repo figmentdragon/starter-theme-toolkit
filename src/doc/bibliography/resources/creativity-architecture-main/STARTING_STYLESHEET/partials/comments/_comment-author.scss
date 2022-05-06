@@ -1,0 +1,40 @@
+.comment-author { /* Comment author's name */
+  line-height: normal;
+  margin-bottom: 4px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #151515;
+  position: relative;
+  text-transform: capitalize;
+  line-height: normal;
+
+  .fn {
+    font-size: 18px;
+    font-weight: 600;
+    color: #151515;
+    position: relative;
+    text-transform: capitalize;
+    line-height: normal;
+  }
+
+  a {
+    text-decoration: none;
+    margin-top: 0;
+    margin-bottom: 5px;
+    line-height: 24px;
+    color: #000000;
+    letter-spacing: 1px;
+    font-size: 16px;
+    display: inline-block;
+  }
+  .avatar {
+    height: 80px;
+    left: -100px;
+    position: absolute;
+    width: 80px;
+    border-radius: 50%;
+  }
+  .says {
+    display: none;
+  }
+}

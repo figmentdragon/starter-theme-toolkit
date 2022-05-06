@@ -1,0 +1,12 @@
+Greetings {{username}},
+
+Someone has requested a password reset code for your Funraise.me! account associated with this e-mail address. To change your password, simply click the following link:
+
+{{href}}
+
+Alternatively, you can go to the http://localhost:3000/reset and enter your reset code manually: {{code}}.
+
+This reset code is only valid for an hour.
+
+Thanks,
+Funraise.me!

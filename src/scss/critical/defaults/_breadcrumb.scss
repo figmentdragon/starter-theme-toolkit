@@ -1,0 +1,21 @@
+
+// Breadcrumbs
+
+$breadcrumb-item-color: rgba(0, 0, 0, 0.55) !default;
+$breadcrumb-item-transition: color 0.15s ease-in-out !default;
+$breadcrumb-item-hover-color: rgba(0, 0, 0, 0.7) !default;
+$breadcrumb-item-before-color: $breadcrumb-item-color !default;
+
+// scss-docs-start breadcrumb-variable
+$breadcrumb-font-size: null !default;
+$breadcrumb-offset-y: 0 !default;
+$breadcrumb-offset-x: 0 !default;
+$breadcrumb-item-offset-x: 0.5rem !default;
+$breadcrumb-margin-bottom: 1rem !default;
+$breadcrumb-bg: null !default;
+$breadcrumb-divider-color: $gray-600 !default;
+$breadcrumb-active-color: $gray-600 !default;
+$breadcrumb-divider: quote('/') !default;
+$breadcrumb-divider-flipped: $breadcrumb-divider !default;
+$breadcrumb-border-radius: null !default;
+// scss-docs-end breadcrumb-variable

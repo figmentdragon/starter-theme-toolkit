@@ -1,0 +1,20 @@
+/*
+ * Media query to respond to a minimum size (mobile first)
+ */
+
+ @mixin resp-min($size) {
+    @media screen and (min-width: $size) {
+        @content;
+    }
+}
+
+
+/*
+ * Media query to respond to a maximum size
+ */
+
+@mixin resp-max($size) {
+    @media screen and (max-width: $size) {
+        @content;
+    }
+}

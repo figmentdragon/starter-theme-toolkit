@@ -1,0 +1,20 @@
+@mixin links {
+  a {
+    outline: none;
+    &:active,
+    &.active {
+      text-decoration: none;
+      &:hover,
+      &:focus {
+
+      }
+      &:visited {
+        text-decoration: none;
+      }
+    }
+    &:disabled,
+    &.disabled {
+
+    }
+  }
+}

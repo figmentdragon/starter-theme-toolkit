@@ -1,0 +1,22 @@
+$modal-inner-padding:               1.5rem;
+
+$modal-lg:                          800px;
+$modal-md:                          500px;
+$modal-sm:                          380px;
+
+$modal-title-line-height:           1.8;
+
+//$modal-title-line-height:           $shape-height-base;
+
+$modal-content-bg:               $primary;
+$modal-content-border-color:     $light;
+$modal-content-border-width:     1px;
+$modal-content-border-radius:   $lg-border-radius;
+
+$modal-header-border-color:   $light;
+$modal-backdrop-bg:           $primary;
+$modal-backdrop-opacity:      .9;
+$modal-footer-border-color:   $modal-header-border-color;
+$modal-header-border-width:   $modal-content-border-width;
+$modal-footer-border-width:   $modal-header-border-width;
+$modal-header-padding:        1.25rem;

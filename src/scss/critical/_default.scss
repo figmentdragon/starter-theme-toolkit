@@ -1,0 +1,146 @@
+/**
+ * 1.3.0 Defaults
+ * Variables should follow the `$component-state-property-size` formula for
+ * consistent naming. Ex: $nav-link-disabled-color and
+ * $modal-content-box-shadow-xs.
+ */
+@import 'function';
+
+ // Color system
+
+ // Set a specific jump point for requesting color jumps
+@import 'defaults/colors/contrast';
+ @import 'defaults/colors/gray-color-variable';
+// @import './../defaults/colors/gray';
+ @import 'defaults/colors/color-variable';
+ @import 'defaults/colors/theme-color-variable';
+ @import 'defaults/colors/color-contrast-map';
+
+@import 'defaults/escaped-character';
+
+@import 'defaults/option';
+
+@import 'defaults/prefix';
+
+@import 'defaults/colors/gradient';
+//@import './../defaults/mask';
+
+//@import './../defaults/size';
+@import './../addons/defaults/measurement';
+@import 'defaults/margin';
+
+@import './../addons/defaults/padding';
+//@import './../defaults/divider';
+@import 'defaults/position-value';
+
+@import 'defaults/typography/body';
+
+@import 'defaults/link';
+
+@import 'defaults/typography/paragraph';
+
+@import 'defaults/grid/grid-breakpoint';
+
+@import 'defaults/grid/grid-container';
+
+@import 'defaults/grid/grid-column';
+//@import './../defaults/columns';
+
+@import 'defaults/grid/container-offset';
+
+@import 'defaults/components/border-variable';
+
+@import 'defaults/components/border-radius';
+
+//@import './../defaults/shadow';
+@import 'defaults/components/box-shadow-variable';
+
+@import 'defaults/components/component-active';
+
+//@import './../defaults/jumbotron';
+
+@import 'defaults/card';
+
+@import 'defaults/components/transition';
+
+@import 'defaults/components/aspect-ratio';
+
+// Typography
+//
+// Font, line-height, and color for body text, headings, and more.
+@import 'defaults/typography/font-stack';
+@import 'defaults/typography/font-variable';
+
+@import 'defaults/typography/font-size';
+
+@import 'defaults/typography/heading-variable';
+
+@import 'defaults/typography/variables/display-variable';
+
+@import 'defaults/typography/type-variable';
+//@import './../defaults/note';
+
+@import 'defaults/button+form';
+
+@import 'defaults/table-variable';
+//@import './../defaults/table';
+
+@import 'defaults/zindex';
+
+//@import './../../base/elements/text-elements/forms/button+form';
+//@import './../defaults/label';
+@import 'defaults/nav/nav-link';
+
+@import 'defaults/nav/nav-tab';
+
+@import 'defaults/nav/nav-pill';
+
+@import 'defaults/nav/navbar';
+//@import './../defaults/scrollspy';
+@import 'defaults/dropdown';
+
+@import 'defaults/pagination';
+
+@import 'defaults/placeholder';
+
+@import 'defaults/card';
+
+@import 'defaults/accordion';
+
+@import 'defaults/tooltip';
+
+@import 'defaults/popover';
+
+@import 'defaults/toast';
+
+@import 'defaults/badge';
+
+@import 'defaults/modal';
+
+@import 'defaults/alert';
+
+@import 'defaults/progress';
+
+@import 'defaults/list-group';
+
+@import 'defaults/image';
+@import 'defaults/thumbnail';
+
+@import 'defaults/figure';
+
+@import 'defaults/breadcrumb';
+
+@import 'defaults/carousel';
+
+//@import './../defaults/stepper';
+@import 'defaults/spinner';
+
+@import 'defaults/buttons+forms/button-close-variable';
+
+@import 'defaults/offcanvas';
+
+@import 'defaults/typography/code';
+
+//@import './../defaults/printing';
+
+//@import './../defaults/utilities';

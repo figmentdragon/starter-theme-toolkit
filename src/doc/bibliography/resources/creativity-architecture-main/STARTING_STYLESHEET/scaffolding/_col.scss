@@ -1,0 +1,29 @@
+.col {
+  @include grid-col;
+  @include border-box;
+  float        : left;
+  padding-left : $gutter-y;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 0%;
+          flex: 1 0 0%;
+
+  .row--gutterless & {
+    padding-left : 0;
+  }
+}
+
+// the last column
+.last-col {
+ float: right;
+ padding-right: 0 !important;
+}
+
+/* Columns generator */
+@each $breakpoint in $breakpoints {
+    $name: nth($breakpoint, 1);
+    $declaration: nth($breakpoint, 2);
+
+    @media only screen and ($declaration) {
+        @include grid-loop($name);
+    }
+}

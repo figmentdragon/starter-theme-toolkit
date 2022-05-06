@@ -1,0 +1,42 @@
+
+// font stacks
+$sans-serif:        system-ui, -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$serif:             "Georgia", Cambria, Times New Roman, Times, serif;
+$monospace:         SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+
+/* Enable keyword, short hand for callig font Stack. */
+$font-family-base:        $sans-serif;
+$code-font:        $monospace;
+
+$primary-font:            "Hand Typewriter", $font-family-base;
+$secondary-font:          "Enjoy Writing", $font-family-base;
+$accent-font:             "GlassAntiqua-Regular", $font-family-base;
+$main-font:               "Avdira", $font-family-base;
+$tertiary-font:           "Raleway", $font-family-base;
+$site-font:               "Euphorigenic", $font-family-base;
+$lead-font:               "Raylig", $font-family-base;
+
+$page-title-font          : $primary-font;
+$post-title-font          : $secondary-font;
+$sub-title-font           : $lead-font;
+$heading-text-font        : tertiary-font;
+$quote-text-font          : $accent-font;
+$body-text-font           : $main-font;
+
+$body-text-align:           null !default;
+$paragraph-margin-bottom:   $offset;
+
+$quotation:               oblique;
+$citation:                italic;
+$link:                    underline;
+
+@media (max-width:500px) {
+  body                   {
+    font-size:80%;
+  }
+  img                    {
+    max-width:100% !important;
+    height:auto !important;
+    float:none !important;
+  }
+}

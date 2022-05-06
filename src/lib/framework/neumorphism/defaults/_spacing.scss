@@ -1,0 +1,28 @@
+// Spacing
+$spacer: 1rem;
+
+$spacers: ();
+$spacers: map-merge(
+  (
+    6: ($spacer * 5),
+    7: ($spacer * 8),
+    8: ($spacer * 10),
+    9: ($spacer * 11),
+    10: ($spacer * 15),
+    'sm': ($spacer * 1),
+    'md': ($spacer * 2),
+    'lg': ($spacer * 4),
+    'xl': ($spacer * 8)
+), $spacers);
+
+
+// This variable affects the `.h-*` and `.w-*` classes.
+
+$sizes: ();
+$sizes: map-merge((
+  25: 25%,
+  50: 50%,
+  60: 60%,
+  75: 75%,
+  100: 100%
+), $sizes);

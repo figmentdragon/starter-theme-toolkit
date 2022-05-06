@@ -1,0 +1,9 @@
+@include media(tablet-horizontal) {
+
+    #feature-slider-section.content-align-right .entry-container .content-wrapper, 
+    .content-align-right .custom-header-content-wrapper {
+        padding: 60px 120px;
+        padding-left: 0;
+        margin: 0 0 0 auto;
+    }
+}

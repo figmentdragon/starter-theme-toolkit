@@ -1,0 +1,18 @@
+// Alerts
+
+
+$alert-border-radius: $xl-border-radius !default;
+
+
+// scss-docs-start alert-variable
+$alert-offset-y: $spacer !default;
+$alert-offset-x: $spacer !default;
+$alert-margin-bottom: 1rem !default;
+$alert-border-radius: $xl-border-radius !default;
+$alert-link-font-weight: $bold-font-weight !default;
+$alert-border-width: $border-width !default;
+$alert-bg-scale: -80% !default;
+$alert-border-scale: -70% !default;
+$alert-color-scale: 40% !default;
+$alert-dismissible-offset-r: $alert-offset-x * 3 !default; // 3x covers width of x plus default padding on either side
+// scss-docs-end alert-variable

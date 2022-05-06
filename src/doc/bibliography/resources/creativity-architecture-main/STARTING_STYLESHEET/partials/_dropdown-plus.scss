@@ -1,0 +1,28 @@
+.dropdown-plus {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 9px;
+}
+.dropdown-plus:before,
+.dropdown-plus:after {
+  position: absolute;
+  content: '';
+  width: 11px;
+  height: 1px;
+  background-color: #8a8a8a;
+  left: 2px;
+  top: 7px;
+}
+.dropdown-plus:after {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.dropdown-plus.dropdown-open:after{
+  opacity: 0;
+}

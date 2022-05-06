@@ -1,0 +1,8 @@
+// Body
+//
+// Settings for the `<body>` element.
+
+$body-bg: $white !default;
+$body-color: tint-color($primary, $color-interval);
+$body-text-align: left;
+$xl-border-radius: 0.5rem;

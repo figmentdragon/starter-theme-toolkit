@@ -1,0 +1,13 @@
+{
+    "recommendations": [
+        "tobiasalthoff.atom-material-theme"
+        "bradlc.vscode-tailwindcss",
+    		"davidanson.vscode-markdownlint",
+    		"dbaeumer.vscode-eslint",
+    		"editorconfig.editorconfig",
+    		"esbenp.prettier-vscode",
+    		"snipsnapdev.snipsnap-vscode",
+    		"stylelint.vscode-stylelint",
+    		"valeryanm.vscode-phpsab"
+    	]
+}

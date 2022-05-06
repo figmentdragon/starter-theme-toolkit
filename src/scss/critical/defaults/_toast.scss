@@ -1,0 +1,21 @@
+// Toasts
+
+$toast-max-width: 350px !default;
+$toast-offset-x: 0.75rem !default;
+$toast-offset-y: 0.5rem !default;
+$toast-font-size: 0.875rem !default;
+$toast-color: null !default;
+$toast-background-color: rgba($white, 0.85) !default;
+$toast-box-shadow: $box-shadow !default;
+$toast-header-background-color: #fff !default;
+
+$toast-border-width: 1px !default;
+$toast-border-color: rgba($black, 0.1) !default;
+$toast-border-radius: $xl-border-radius !default;
+
+$toast-spacing: $container-offset-x !default;
+
+$toast-header-color: $gray-600 !default;
+$toast-header-background-color: rgba($white, 0.85) !default;
+$toast-header-border-color: rgba($black, 0.05) !default;
+// scss-docs-end toast-variable

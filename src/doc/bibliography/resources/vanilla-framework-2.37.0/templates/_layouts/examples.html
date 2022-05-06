@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}{% endblock %}{% if self.title() %} | {% endif %}Examples | Vanilla framework documentation</title>
+
+    {% if is_standalone %}
+    <link rel="stylesheet" type="text/css" href="{{ versioned_static('build/css/standalone/' + (self.standalone_css() if self.standalone_css is defined else 'base') + '.css') }}" />
+    {% else %}
+    <link rel="stylesheet" type="text/css" href="{{ versioned_static('build/css/build.css') }}" />
+    {% endif %}
+    <link rel="stylesheet" type="text/css" href="{{ versioned_static('build/css/standalone/example.css') }}" />
+    <link rel="icon" href="https://assets.ubuntu.com/v1/ab36e6ed-vanilla_favicon_32px.png" type="image/x-icon" />
+    {% block style %}{% endblock %}
+
+    <script>
+      (function() {
+        function inIframe () {
+          try {
+            return window.self !== window.top;
+          } catch (e) {
+            return true;
+          }
+        }
+
+        function fragmentFromString(htmlString) {
+          var temp = document.createElement('template');
+          temp.innerHTML = htmlString;
+          return temp.content;
+        }
+
+        if (!inIframe()) {
+          document.documentElement.classList.add("u-baseline-grid");
+
+          document.addEventListener('DOMContentLoaded', function() {
+            var body = document.body;
+            var controls = fragmentFromString('<div class="u-baseline-grid__toggle"><label for="baseline-grid-toggle">Toggle baseline grid<input type="checkbox" class="p-switch js-baseline-toggle" id="baseline-grid-toggle"/><span class="p-switch__slider"></span></label></div>');
+            body.appendChild(controls);
+
+            var toggle = document.querySelector('.js-baseline-toggle');
+            toggle.addEventListener('click', function (event) {
+              body.classList.toggle('u-baseline-grid');
+            });
+          });
+        }
+      })();
+    </script>
+  </head>
+
+  <body>
+    {% block content %}{% endblock %}
+  </body>
+</html>

@@ -1,0 +1,91 @@
+/* Gives a basic visual design to form elements */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	border: 1px solid $red;
+	border-color: $red $red $gray $red;
+	border-radius: 3px;
+	background: $light;
+	-webkit-box-shadow: inset 0 1px 0 rgba($red, 0.5), inset 0 15px 17px rgba($red, 0.5), inset 0 -5px 12px rgba($black, 0.05);
+	-moz-box-shadow: inset 0 1px 0 rgba($red, 0.5), inset 0 15px 17px rgba($red, 0.5), inset 0 -5px 12px rgba($black, 0.05);
+	box-shadow: inset 0 1px 0 rgba($red, 0.5), inset 0 15px 17px rgba($red, 0.5), inset 0 -5px 12px rgba($black, 0.05);
+	color: rgba($black, .8);
+	cursor: pointer;
+	/* Improves usability and consistency of cursor style between image-type 'input' and others */
+	-webkit-appearance: button;
+	/* Corrects inability to style clickable 'input' types in iOS */
+	font-size: 12px;
+	font-size: 1.4rem;
+	line-height: 1;
+	padding: 1.12em 1.5em 1em;
+	text-shadow: 0 1px 0 rgba($red, .8);
+}
+
+button:hover,
+html input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+	border-color: $red $gray $light $gray;
+	-webkit-box-shadow: inset 0 1px 0 rgba($red, 0.8), inset 0 15px 17px rgba($red, 0.8), inset 0 -5px 12px rgba($black, 0.02);
+	-moz-box-shadow: inset 0 1px 0 rgba($red, 0.8), inset 0 15px 17px rgba($red, 0.8), inset 0 -5px 12px rgba($black, 0.02);
+	box-shadow: inset 0 1px 0 rgba($red, 0.8), inset 0 15px 17px rgba($red, 0.8), inset 0 -5px 12px rgba($black, 0.02);
+}
+
+button:focus,
+html input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus,
+button:active,
+html input[type="button"]:active,
+input[type="reset"]:active,
+input[type="submit"]:active {
+	border-color: $light $gray $gray $gray;
+	-webkit-box-shadow: inset 0 -1px 0 rgba($red, 0.5), inset 0 2px 5px rgba($black, 0.15);
+	-moz-box-shadow: inset 0 -1px 0 rgba($red, 0.5), inset 0 2px 5px rgba($black, 0.15);
+	box-shadow: inset 0 -1px 0 rgba($red, 0.5), inset 0 2px 5px rgba($black, 0.15);
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	box-sizing: border-box;
+	/* Addresses box sizing set to content-box in IE8/9 */
+	padding: 0;
+	/* Addresses excess padding in IE8/9 */
+}
+
+input[type="search"] {
+	-webkit-appearance: textfield;
+	/* Addresses appearance set to searchfield in S5, Chrome */
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	/* Addresses box sizing set to border-box in S5, Chrome (include -moz to future-proof) */
+	box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-decoration {
+	/* Corrects inner padding displayed oddly in S5, Chrome on OSX */
+	-webkit-appearance: none;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+	/* Corrects inner padding and border displayed oddly in FF3/4 www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/ */
+	border: 0;
+	padding: 0;
+}
+
+input[type=email],
+input[type=text],
+textarea {
+	background: rgba($white, 0.3);
+	border: 1px solid $red;
+	border-radius: 3px;
+	padding: 6px;
+}
+
+input[type=email]:focus,
+input[type=text]:focus,
+textarea:focus {
+	background: $white;
+}

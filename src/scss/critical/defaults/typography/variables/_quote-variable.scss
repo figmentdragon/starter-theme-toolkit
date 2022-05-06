@@ -1,0 +1,18 @@
+$blockquote-interval: 8%;
+$blockquote-margin-y:         $vertical-spacer;
+$blockquote-font-size:        $base-font-size * 1.25;
+$blockquote-font-family: $accent-font;
+
+$blockquote-color:  mix($gray-400, $primary, $color-interval);
+$blockquote-bg: mix($gray-200, $blockquote-color, $color-interval);
+$blockquote-border-width: 4;
+$blockquote-border-color: mix($gray-700, $blockquote-color, $color-interval);
+$blockquote-footer-color:  mix($gray-400, $blockquote-color, 8%);
+
+$blockquote-footer-font-size: $sm-font-size;
+
+$blockquote-offset-y                        : .5rem !default;
+$blockquote-offset-x                        : 1rem !default;
+$blockquote-p-offset-y                      : $blockquote-offset-x !default;
+$blockquote-p-offset-l                      : 2rem !default;
+$blockquote-p-font-size                      : 1.1rem !default;

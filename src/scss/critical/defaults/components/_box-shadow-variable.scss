@@ -1,0 +1,31 @@
+// scss-docs-start box-shadow-variables
+$shadow-text:                 mix($gray-400, $tertiary, $color-interval);
+$shadow-box:                  mix($gray-800, $tertiary, $color-interval);
+$shadow-primary:              mix($gray-800, $primary, $color-interval);
+$shadow-secondary:              mix($gray-800, $secondary, $color-interval);
+$shadow-accent:              mix($gray-800, $accent, $color-interval);
+$shadow-tertiary:              mix($gray-800, $tertiary, $color-interval);
+$box-shadow:                  0 .5rem 1rem rgba($shadow-box, .15) !default;
+$box-shadow-sm:               0 .125rem .25rem rgba($shadow-box, .075) !default;
+$box-shadow-lg:               0 1rem 3rem rgba($shadow-box, .175) !default;
+$box-shadow-inset:            inset 0 1px 2px rgba($shadow-box, .075) !default;
+// scss-docs-end box-shadow-variables
+
+$clay-primary : inset 10px 10px 15px $shadow-box, inset -10px -10px 20px $shadow-primary, 10px 10px 20px $shadow-box;
+
+
+$blue-shadow: $blue-800;
+$indigo-shadow: $indigo-900;
+$purple-shadow: $purple-800;
+$pink-shadow: $pink-800;
+$red-shadow: $red-800;
+$orange-shadow: $orange-800;
+$yellow-shadow: $yellow-900;
+$green-shadow: $green-800;
+$teal-shadow: $teal-800;
+$cyan-shadow: $cyan-800;
+
+/* Logo Shadow */
+.logo-shadow {
+  filter: drop-shadow(20px 10px 1px rgba(0, 0, 0, 0.432));
+}

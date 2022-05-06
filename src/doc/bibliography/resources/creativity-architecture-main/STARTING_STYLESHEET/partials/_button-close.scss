@@ -1,0 +1,34 @@
+.btn-close {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 24px;
+  color: #ffffff;
+  line-height: 48px;
+  text-align: center;
+  display: none;
+}
+.btn-close:before {
+  content: '';
+  width: 30px;
+  height: 2px;
+  background-color: #ffffff;
+  display: block;
+  -webkit-transform: rotate(44deg) translate(26px, 10px);
+  -moz-transform: rotate(44deg) translate(26px, 10px);
+  transform: rotate(44deg) translate(26px, 10px);
+}
+.btn-close:after {
+  content: '';
+  width: 30px;
+  height: 2px;
+  background-color: #ffffff;
+  display: block;
+  -webkit-transform: rotate(-46deg) translate(-10px, 24px);
+  -moz-transform: rotate(-46deg) translate(-10px, 24px);
+  transform: rotate(-46deg) translate(-10px, 24px);
+}
+.active .btn-close{
+  display: inline-block;
+}

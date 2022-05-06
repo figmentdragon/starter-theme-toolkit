@@ -1,0 +1,27 @@
+.comment-body {
+  margin-left: 100px;
+  position: relative;
+  font-size: 15px;
+  .reply {
+    margin-top: 20px;
+    .comment-reply-link {
+      -webkit-transition: 120ms ease-in;
+      -o-transition: 120ms ease-in;
+      transition: 120ms ease-in;
+      text-decoration: none;
+    }
+  }
+}
+
+.pingback .comment-body,
+.trackback .comment-body {
+    padding: 10px 0;
+}
+.pingback .comment-body a,
+.trackback .comment-body a {
+    text-decoration: none;
+}
+
+div.comment-body {
+    margin-left: 0;
+}

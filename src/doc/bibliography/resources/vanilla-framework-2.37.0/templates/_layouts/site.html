@@ -1,0 +1,14 @@
+{% extends "_layouts/_root.html" %}
+
+{% block custom_head %}
+    <link rel="stylesheet" href="{{ versioned_static('build/css/docs/site.css') }}" />
+
+    <script src="https://cdn.jsdelivr.net/blazy/latest/blazy.min.js"></script>
+    <script>
+      var bLazy = new Blazy();
+    </script>
+{% endblock %}
+
+{% block body %}
+    {% block content %}{{ content | safe }}{% endblock content %}
+{% endblock %}

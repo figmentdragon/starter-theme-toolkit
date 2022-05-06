@@ -1,0 +1,60 @@
+@import "variables";
+
+/* Grid containers */
+/* Define the maximum width of `.container` for different screen sizes. */
+$container-max-widths: (
+	sm: 574px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px,
+	xxl: 1400px
+);
+
+@include _assert-ascending($container-max-widths, "$container-max-widths");
+
+$content-max-widths: (
+	sm: 542px,
+	md: 736px,
+	lg: 960px,
+	xl: 1168px,
+	xxl: 1368px
+);
+
+/* Grid breakpoints */
+/* Define the minimum dimensions at which your layout will change, adapting to different screen sizes, for use in media queries. */
+$breakpoint-xs: 0;
+$breakpoint-sm: 574px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+$breakpoint-xxl: 1400px;
+
+$breakpoints: (
+  xs: 0,
+	sm: 574px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px,
+	xxl: 1400px
+);
+
+$grid-breakpoints: (
+  'xxl': $breakpoint-xxl,
+  'xl': $breakpoint-xl,
+  'lg': $breakpoint-lg,
+  'md': $breakpoint-md,
+  'sm': $breakpoint-sm,
+  'xs': $breakpoint-xs
+  );
+
+
+
+
+
+
+
+$container-xxl-content-max-width: $breakpoint-xxl - $container-offset;
+$container-xl-content-max-width: $breakpoint-xl - $container-offset;
+$container-lg-content-max-width: $breakpoint-lg - $container-offset;
+$container-md-content-max-width: $breakpoint-md - $container-offset;
+$container-sm-content-max-width: $breakpoint-sm - $container-offset;

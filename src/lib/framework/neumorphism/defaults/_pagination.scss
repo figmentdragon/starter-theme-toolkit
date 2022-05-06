@@ -1,0 +1,27 @@
+
+// $pagination-padding-y:              .5rem;
+// $pagination-padding-x:              .75rem;
+// $pagination-padding-y-sm:           .25rem;
+// $pagination-padding-x-sm:           .5rem;
+// $pagination-padding-y-lg:           .75rem;
+// $pagination-padding-x-lg:           1.5rem;
+// $pagination-line-height:            1.25;
+
+$pagination-color:                  $gray-600;
+$pagination-bg:                     $white ;
+$pagination-border-width:           $border-width;
+$pagination-border-color:           $gray-200;
+
+
+$pagination-hover-color:            $gray-600;
+$pagination-hover-bg:               $gray-200;
+$pagination-hover-border-color:     $gray-200;
+
+$pagination-active-color:           $component-active-color;
+$pagination-active-bg:              $primary;
+$pagination-active-border-color:    $pagination-active-bg;
+$pagination-active-box-shadow:      $shadow-inset;
+
+$pagination-disabled-color:         $gray-800;
+$pagination-disabled-bg:            $primary;
+$pagination-disabled-border-color:  $gray-300;

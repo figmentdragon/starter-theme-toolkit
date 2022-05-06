@@ -1,0 +1,6 @@
+@function contrast-ratio($gray-200, $foreground: $color-contrast-light) {
+  $l1: luminance($gray-200);
+  $l2: luminance(opaque($gray-200, $foreground));
+
+  @return if($l1 > $l2, divide($l1 + .05, $l2 + .05), divide($l2 + .05, $l1 + .05));
+}

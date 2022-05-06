@@ -1,0 +1,23 @@
+@import 'core';
+
+@import 'base/elements/html-elements/document';
+@import 'base/elements/html-elements/html';
+@import 'base/elements/html-elements/body';
+@import 'base/elements/html-elements/content-sectioning';
+@import 'base/elements/html-elements/table-content';
+
+@import 'base/elements/text-elements/text-content';
+@import 'base/elements/text-elements/inline-text-semantics';
+@import 'base/elements/text-elements/form';
+
+@import 'base/elements/web-components/demarcating-edits';
+@import 'base/elements/web-components/embedded-content';
+@import 'base/elements/web-components/image+multimedia';
+@import 'base/elements/web-components/interactive';
+@import 'base/elements/web-components/scripting';
+@import 'base/elements/web-components/svg+math';
+@import 'base/elements/web-components/web-components';
+
+@import "base/grid";
+@import './../vendors/wordpress/wp-body-class';
+@import './../vendors/wordpress/wordpress-generated-css';

@@ -1,0 +1,39 @@
+/* Calendar Widget */
+#wp-calendar {
+	width: 100%;
+}
+#wp-calendar caption {
+	font-style: italic;
+}
+#wp-calendar thead th {
+	text-align: center;
+}
+#wp-calendar tbody,
+#wp-calendar tbody td {
+	border: 1px solid #000;
+}
+#wp-calendar tbody {
+	border-left-width: 0;
+}
+#wp-calendar tbody td {
+  	border-width: 1px 0 0 0;
+}
+#wp-calendar tbody td a {
+	font-weight: bold;
+}
+#wp-calendar tbody td:hover {
+
+}
+#wp-calendar tfoot #next {
+	text-align: right;
+}
+#wp-calendar #today {
+	font-weight: bold;
+}
+#wp-calendar #prev,
+#wp-calendar #next {
+
+}
+#wp-calendar tbody .pad {
+
+}

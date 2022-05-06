@@ -1,0 +1,19 @@
+$archive-description-font-size: $base-font-size * 1.5;
+$archive-description-line-height: $sm-line-height;
+
+.page-header {
+    padding-bottom: calc(2 * $horizontal-offset);
+    border-bottom: 3px solid $border-color;
+}
+
+
+@import "pages/404";
+@import "pages/about";
+@import "pages/archives";
+@import "pages/front-page";
+@import "pages/home";
+@import "pages/pages";
+@import "pages/post";
+@import "pages/posts-and-pages";
+@import "pages/search";
+@import "pages/single";

@@ -1,0 +1,55 @@
+/**
+ * 15.3 - >= 568px
+ */
+@include media(mobile_portrait) {
+	.wp-playlist .mejs-previous-button.mejs-previous,
+	.wp-playlist .mejs-next-button.mejs-next {
+		display: block;
+	}
+
+	#sticky-playlist-section .wp-playlist-tracks {
+	    max-width: 440px;
+	}
+
+	.featured-video-section.style-two .section-content-wrapper .hentry:first-child .entry-container {
+	    display: none;
+	}
+
+	.featured-video-section.style-two .section-content-wrapper .hentry:first-child .post-thumbnail {
+	    margin-bottom: 0;
+	}
+
+	.featured-video-section.style-two .section-content-wrapper .hentry:first-child {
+		width: 100%;
+	}
+	#album-section .layout-three .hentry,
+	.featured-video-section.style-two .section-content-wrapper .hentry:not(:first-child) {
+		width: 33.33%;
+	}
+
+	#album-section .layout-two .hentry,
+	#album-section .layout-four .hentry {
+		width: 50%;
+	}
+
+	#album-section article.hentry {
+		padding: 0 15px;
+	}
+	.album-section .section-content-wrapper.layout-three {
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+
+	.portfolio-content-wrapper.layout-four .hentry {
+        width: 50%;
+    }
+	#primary-menu-wrapper .menu-inside-wrapper {
+        max-width: 350px;
+        width: 300px;
+		padding: 35px 0;
+    }
+    #menu-toggle.close-toggle {
+        display: none;
+    }
+	
+}

@@ -1,0 +1,26 @@
+// Cards
+
+$card-spacer-y: $spacer !default;
+$card-spacer-x: $spacer !default;
+
+$card-title-spacer-y: $spacer * 0.5 !default;
+$card-border-width: $border-width !default;
+$card-border-color: rgba($black, 0.125) !default;
+$card-border-radius: $border-radius !default;
+
+$card-inner-border-radius: subtract($card-border-radius, $card-border-width) !default;
+$card-cap-offset-y: $card-spacer-y * 0.5 !default;
+$card-cap-offset-x: $card-spacer-x !default;
+$card-cap-bg: rgba($black, 0.03) !default;
+$card-cap-color: null !default;
+$card-height: null !default;
+$card-color: null !default;
+$card-bg: $white !default;
+$card-img-overlay-padding: $spacer !default;
+$card-group-margin: $grid-gutter-width * 0.5 !default;
+
+$card-box-shadow: $box-shadow !default;
+$card-header-background-color: rgba(255, 255, 255, 0) !default;
+$card-footer-background-color: rgba(255, 255, 255, 0) !default;
+$card-border-radius: 0.5rem !default;
+$card-img-overlay-padding: 1.5rem !default;

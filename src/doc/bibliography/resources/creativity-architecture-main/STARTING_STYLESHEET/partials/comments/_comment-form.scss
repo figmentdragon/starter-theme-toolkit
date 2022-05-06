@@ -1,0 +1,102 @@
+.comment-form {
+  margin-top: 20px;
+  label {
+    display: none;
+  }
+  .submit {
+    display: inline-block;
+    min-width: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    height: 36px;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+
+    :hover {
+      opacity: 0.5;
+    }
+  }
+  .comment-form-comment {
+    margin-bottom: 30px;
+  }
+  .comment-form-url {
+    margin-bottom: 35px;
+  }
+  #wp-comment-cookies-consent {
+    margin: 0 10px 0 0;
+  }
+  .comment-form-cookies-consent {
+    padding: 0 15px;
+    display: none;
+
+    label {
+      margin-left: 5px;
+      display: inline;
+    }
+  }
+}
+
+.logged-in-as {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  a {
+    font-size: 15px;
+    color: #ababab;
+  }
+}
+
+.comment-form-cookies-consent {
+  padding: 0 15px;
+  display: none;
+
+  label {
+    margin-left: 5px;
+    display: inline;
+  }
+}
+
+.comment-notes,
+#commentform .form-allowed-tags,
+p.nocomments,
+p.logged-in-as,
+#commentform label,
+.contact-item {
+  margin-bottom: 20px;
+}
+
+.required { /* The asterisk next to a required comment field */
+	color: #880000;
+}
+#commentform label { /* The text next to each comment form field */
+	padding: 1em 0;
+}
+
+.contact-item textarea ,
+#commentform input[type="text"] {
+  padding-top: 5px;
+  height: 100px;
+  resize: vertical;
+}
+#commentform #comment { /* The comment form textarea */
+
+}
+#commentform .form-allowed-tags,
+#commentform .form-allowed-tags code {
+
+}
+p.nocomments,
+.no-comments,
+.comment-awaiting-moderation {
+  /* Message displayed when there are no comments */
+  color: #5b5b5b;
+  font-size: 14px;
+  margin-top: 5px;
+}

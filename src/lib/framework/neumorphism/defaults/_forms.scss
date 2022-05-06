@@ -1,0 +1,122 @@
+// Forms
+
+$input-padding-y:                       .6rem;
+$input-padding-x:                       .75rem;
+$input-line-height:                     $input-btn-line-height;
+
+$input-padding-y-sm:                    $input-btn-padding-y-sm;
+$input-padding-x-sm:                    $input-btn-padding-x-sm;
+$input-line-height-sm:                  $input-btn-line-height-sm;
+
+$input-padding-y-lg:                    $input-btn-padding-y-lg;
+$input-padding-x-lg:                    $input-btn-padding-x-lg;
+$input-line-height-lg:                  $input-btn-line-height-lg;
+
+$input-border-radius:                   $border-radius;
+$input-xl-border-radius:                $xl-border-radius;
+$input-lg-border-radius:                $lg-border-radius;
+$input-sm-border-radius:                $sm-border-radius;
+
+$input-disabled-bg:                     $gray-300;
+
+$input-muted-bg:                        $gray-100;
+
+$input-color:                           $body-color;
+$input-border-color:                    $light;
+$input-border-width:                    $border-width ;
+
+$input-focus-bg:                        $primary;
+$input-focus-border-color:              theme-color("light");
+$input-focus-color:                     $input-color;
+$input-focus-width:                     0;
+$input-focus-box-shadow:                none; //0 1px 3px 0 $gray-500;
+$input-box-shadow:                      $shadow-inset;
+
+$input-placeholder-color:               $gray-900;
+$input-focus-placeholder-color:         $gray-900;
+
+$input-height-border:                   $input-border-width;
+$input-height-inner-half:               calc(#{$input-line-height * .325rem} + #{$input-padding-y});
+$input-height-xl:                       calc(#{$input-line-height-lg * 1.5em} + #{$input-btn-padding-y-lg * 2} + #{$input-height-border}) !default;
+
+$input-transition:                      all 0.3s ease-in-out;
+
+
+//@import 'defaults/input-group';
+// Input groups
+
+$input-group-addon-color:               $input-placeholder-color;
+$input-group-addon-bg:                  $input-bg;
+$input-group-addon-border-color:        $input-border-color;
+
+$input-group-addon-focus-color:               $input-focus-color;
+$input-group-addon-focus-bg:                  $input-focus-bg;
+$input-group-addon-focus-border-color:        $gray-200;
+
+
+//@import 'defaults/custom-form';
+// Custom forms
+
+$custom-control-gutter:                 1.75rem;
+$custom-control-spacer-x:               1rem;
+$custom-control-line-height:            1;
+$custom-control-indicator-size:         1.25rem;
+
+$custom-control-bg:                     $gray-400;
+$custom-control-indicator-bg:           $white;
+$custom-control-border-width:           $border-width;
+$custom-control-border-color:           $input-border-color;
+$custom-control-box-shadow:             none;
+$custom-toggle-slider-indicator-bg:     $dark;
+
+
+
+$custom-control-indicator-hover-color:         $component-hover-color;
+$custom-control-indicator-hover-bg:            $primary;
+$custom-control-indicator-hover-border-color:  $component-hover-border-color;
+
+$custom-control-indicator-active-color:         $component-active-color;
+$custom-control-indicator-active-border-color:  $component-active-border-color;
+$custom-control-indicator-active-bg:            transparent;
+
+
+$custom-control-indicator-checked-color:        $component-active-color;
+$custom-control-indicator-checked-bg:           $primary;
+$custom-control-indicator-checked-border-color: $primary;
+$custom-control-indicator-checked-disabled-bg:  rgba(theme-color("primary"), .7);
+$custom-control-indicator-border-width:         1px;
+
+$custom-control-indicator-disabled-bg:          $gray-200;
+$custom-control-label-disabled-color:           $gray-800;
+
+$custom-checkbox-bg:                            $gray-400;
+$custom-checkbox-checked-bg:                    theme-color("primary");
+$custom-checkbox-disabled-checked-bg:           rgba(theme-color("dark"), .7);
+$custom-checkbox-indicator-border-radius:       $circle-radius;
+$custom-checkbox-indicator-border-width:        $border-width-md;
+$square-checkbox-indicator-border-radius:       2px;
+$custom-checkbox-indicator-icon-checked:        $font-awesome-5;
+$custom-checkbox-shadow-inset:                  inset 1px 2px 2px #b8b9be, inset -5px -2px 4px #FFFFFF;
+
+$custom-switch-indicator-size:                  calc(#{$custom-control-indicator-size} - #{$custom-control-indicator-border-width * 4});
+
+//Switches
+$custom-switch-width:                           $custom-control-indicator-size * 2 !default;
+$custom-switch-indicator-border-radius:         $custom-control-indicator-size / 2 !default;
+$custom-switch-indicator-size:                  calc(#{$custom-control-indicator-size} - #{$custom-control-indicator-border-width * 4}) !default;
+
+////////@import 'defaults/form-validation';
+// Form validation
+
+$form-feedback-valid-bg:         lighten($success, 15%);
+$form-feedback-valid-color:      theme-color("success");
+$form-feedback-invalid-bg:       theme-color("danger");
+$form-feedback-invalid-color:    theme-color("danger");
+
+////@import 'defaults/btn-border-radius';
+// Allows for customizing button radius independently from global border radius
+
+$btn-border-radius:           $input-border-radius;
+$btn-xl-border-radius:        $input-xl-border-radius;
+$btn-lg-border-radius:        $input-lg-border-radius;
+$btn-sm-border-radius:        $input-border-radius;

@@ -1,0 +1,48 @@
+#preload {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 9999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+#preload .bounce {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  margin: 40px auto;
+}
+#preload .bounce:before,
+#preload .bounce:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #242424;
+  opacity: 0.4;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: ts-bounce 2.4s infinite ease-in-out;
+}
+#preload .bounce:after {
+  animation-delay: -1.2s;
+}
+@keyframes ts-bounce {
+  0%,
+  100% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+}

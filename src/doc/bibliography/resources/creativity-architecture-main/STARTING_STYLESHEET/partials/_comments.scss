@@ -1,0 +1,164 @@
+/* =Comments
+----------------------------------------------- */
+
+#comments,
+#respond { /* Container for the comments section */
+	clear: both;
+  margin-top: 40px;
+  padding-top: 30px;
+  border-top: 1px solid #ababab;
+}
+
+#comments {
+  .comment-list,
+  .children {
+    list-style: none;
+  }
+  .comments-inner {
+    margin-top: 30px;
+    + #respond {
+      margin-top: 50px;
+    }
+  }
+  .comment-list {
+    padding-left: 0;
+    margin: 0;
+  }
+  .children {
+    padding-left: 30px;
+  }
+  .comment-avatar{
+    width: 60px;
+    height: 60px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    overflow: hidden;
+    float: left;
+  }
+  .comment-context {
+    margin-left: 60px;
+    padding-left: 20px;
+    .title {
+      font-size: $base-font-size;
+      display: inline-block;
+    }
+  }
+  .comment-content {
+    p {
+      :last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .comment-date {
+    color: #ababab;
+    font-size: 14px;
+    font-style: italic;
+
+    :before {
+      content: '-';
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+  }
+  .comment-body {
+    margin-top: 30px;
+  }
+  .reply {
+    font-syle: italic;
+  }
+}
+
+.bypostauthor { /* Gives post author comments thier own style */
+
+}
+.comments-title,
+#reply-title {
+  margin-bottom: 0px;
+}
+
+.comment-reply-title {
+  margin-top: 0;
+  margin-bottom: 5px;
+  line-height: 24px;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 1px;
+
+  small {
+    text-align: right;
+    float: right;
+    display: inline-block;
+    position: relative;
+    padding-left: 30px;
+    top: 8px;
+    font-size: 14px;
+  }
+}
+
+@import "comments/comment-body";
+@import "comments/commentlist";
+
+.comments-area > .comment-list > .comment:first-of-type {
+    border-top: 0;
+}
+.comments-area > .comment-list > .comment:last-of-type {
+    border-bottom: 1px solid #e9e9e9;
+}
+
+.comment .avatar {
+  /* Comment author's gravatar image */
+}
+@import "comments/comment-author";
+
+@import "comments/comment-meta";
+
+.comment-content { /* Actual comment text */
+  p {
+    font-size: 15px;
+    line-height: 26px;
+    margin-bottom: 10px;
+  }
+  blockquote p {
+    font-size: inherit;
+    line-height: inherit;
+    margin-bottom: 0;
+  }
+  img {
+    margin-top: 3px;
+  }
+}
+
+.comment .reply { /* The "Reply" link under each comment */
+	text-align: right;
+}
+
+.comments-pagination {
+    margin: 2em 0 3em;
+}
+
+ol .children {
+    margin-left: 90px !important;
+}
+
+/* Comment Form */
+@import "comments/comment-form";
+
+@media (max-width: 767px) {
+    .comment-form .comment-form-author,
+    .comment-form .comment-form-email,
+    .comment-form .comment-form-url {
+        display: block;
+        float: none;
+        width: 100%;
+    }
+    .comment-form .comment-form-author,
+    .comment-form .comment-form-email {
+        margin-bottom: 30px;
+    }
+
+    ol .children {
+        margin-left: 35px !important;
+    }
+}

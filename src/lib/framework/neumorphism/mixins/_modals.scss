@@ -1,0 +1,23 @@
+@mixin modal-variant($gray-200) {
+	.modal-title {
+		color: color-yiq($gray-200);
+	}
+	.modal-header,
+	.modal-footer {
+		border-color: rgba(color-yiq($gray-200), .075);
+	}
+	.modal-content {
+		background-color:$gray-200;
+		color: color-yiq($gray-200);
+
+		.heading {
+			color: color-yiq($gray-200);
+		}
+	}
+
+	.close { 
+    	&>span:not(.sr-only) {
+    		color: $white;
+    	}
+    }
+}

@@ -1,0 +1,37 @@
+$display1-size:               5rem;
+$display2-size:               3.5rem;
+$display3-size:               2.5rem;
+$display4-size:               1.875rem  ;
+
+$display1-weight:             $bold-font-weight;
+$display2-weight:             $bold-font-weight;
+$display3-weight:             $bold-font-weight;
+$display4-weight:             $bold-font-weight;
+$display-line-height:         $headings-line-height;
+
+$paragraph-font-size:         1rem;
+$paragraph-font-weight:       300;
+$paragraph-line-height:       1.6;
+
+$lead-font-size:              ($paragraph-font-size * 1.25);
+$lead-font-weight:            300;
+
+$small-font-size:             80%;
+
+$text-muted:                  $gray-800;
+
+$blockquote-small-color:      $gray-800;
+$blockquote-font-size:        ($font-size-base * 1.25);
+
+$hr-border-color:             rgba($black, .05);
+$hr-border-width:             $border-width;
+
+$mark-padding:                .2em;
+
+$dt-font-weight:              $bold-font-weight;
+
+$list-inline-padding:         .5rem;
+
+$mark-bg:                     #fcf8e3;
+
+$hr-margin-y:                 $spacer * 1.5;

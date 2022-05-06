@@ -1,0 +1,19 @@
+// scss-docs-start border-variable
+$border-width:                2 !default;
+$border-widths: (
+  1: calc($border-width + 0)px,
+  2: calc($border-width + 1)px,
+  3: calc($border-width + 2)px,
+  4: calc($border-width + 3)px,
+  5: calc($border-width + 4)px
+);
+
+$xs-border-width: 1;
+$sm-border-width: 2;
+$md-border-width: 3;
+$lg-border-width: 4;
+$focus-border-width: 5;
+
+$border-style:                solid;
+$border-color:                rgba($black, .15) !default;
+// scss-docs-end border-variable

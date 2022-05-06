@@ -1,0 +1,79 @@
+// Modals
+
+$modal-box-shadow: $box-shadow !default;
+$modal-content-border-radius: $xl-border-radius !default;
+
+// scss-docs-start modal-variable
+$modal-distance                              : 10px !default;
+$modal-width                                 : 400px !default;
+$modal-full-height-medium-screen             : 800px !default;
+$modal-full-height-large-screen              : 1000px !default;
+$modal-fade-top-transform                    : translate3d(0, -25%, 0) !default;
+$modal-fade-bottom-transform                 : translate3d(0, 25%, 0) !default;
+$modal-fade-right-transform                  : translate3d(25%, 0, 0) !default;
+$modal-fade-left-transform                   : translate3d(-25%, 0, 0) !default;
+$modal-notify-body-padding                   : 1.5rem !default;
+$modal-notify-heading-padding                : .3rem !default;
+$modal-notify-font-size                      : 1.15rem !default;
+$modal-avatar-margin-top                     : 6rem !default;
+$modal-avatar-header-margin-top              : -6rem !default;
+$modal-avatar-header-margin-bottom           : -1rem !default;
+$modal-avatar-img-width                      : 130px !default;
+$modal-body-offset-right                    : 2rem !default;
+$modal-body-offset-left                     : $modal-body-offset-right !default;
+$modal-body-margin-top                       : 1rem !default;
+$modal-inner-offset: $spacer !default;
+
+$modal-footer-margin-between: 0.5rem !default;
+
+$modal-dialog-margin: 0.5rem !default;
+$modal-dialog-margin-y-sm-up: 1.75rem !default;
+
+$modal-title-line-height: $base-line-height !default;
+
+$modal-content-color: null !default;
+$modal-content-bg: $white !default;
+$modal-content-border-color: rgba($black, 0.2) !default;
+$modal-content-border-width: $border-width !default;
+$modal-content-border-radius: $lg-border-radius !default;
+$modal-content-inner-border-radius: subtract(
+  $modal-content-border-radius,
+  $modal-content-border-width
+) !default;
+$modal-content-box-shadow-xs: $box-shadow-sm !default;
+$modal-content-box-shadow-sm-up: $box-shadow !default;
+
+$modal-backdrop-bg: $black !default;
+$modal-backdrop-opacity: 0.5 !default;
+$modal-header-border-color: $border-color !default;
+$modal-footer-border-color: $modal-header-border-color !default;
+$modal-header-border-width: $modal-content-border-width !default;
+$modal-footer-border-width: $modal-header-border-width !default;
+$modal-header-offset-y: $modal-inner-offset !default;
+$modal-header-offset-x: $modal-inner-offset !default;
+$modal-header-offset: $modal-header-offset-y $modal-header-offset-x !default; // Keep this for backwards compatibility
+
+$modal-sm: 300px !default;
+$modal-md: 500px !default;
+$modal-lg: 800px !default;
+$modal-xl: 1140px !default;
+
+$modal-fade-transform: translate(0, -50px) !default;
+$modal-show-transform: none !default;
+$modal-transition: transform 0.3s ease-out !default;
+$modal-scale-transform: scale(1.02) !default;
+
+$cascading-modal-margin-top                  : -2rem !default;
+$cascading-modal-margin-right                : 1rem !default;
+$cascading-modal-margin-bottom               : $cascading-modal-margin-right !default;
+$cascading-modal-margin-left                 : $cascading-modal-margin-right !default;
+$cascading-modal-padding                     : 1.5rem !default;
+$cascading-modal-close-margin-right          : $cascading-modal-margin-right !default;
+$cascading-modal-font-size                   : 1.25rem !default;
+$cascading-modal-fa-margin-right             : 9px !default;
+$cascading-modal-social-margin-top           : $cascading-modal-padding !default;
+$cascading-modal-a-font-size                 : 1rem !default;
+$cascading-modal-tabs-margin-x               : 1rem !default;
+$cascading-modal-tabs-margin-top             : -1.5rem !default;
+$cascading-modal-tabs-offset-top            : 1.7rem !default;
+// scss-docs-end modal-variable

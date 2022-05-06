@@ -1,0 +1,8 @@
+$base-unit: 1.05 !default;
+
+$xs: calc($base-unit * .15);
+$sm: calc($base-unit * .75);
+$md: calc($base-unit * 1.50);
+$lg: calc($base-unit * 2.25);
+$xl: calc($base-unit * 3.00);
+$x2l: calc($base-unit * 3.75);

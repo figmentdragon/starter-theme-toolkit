@@ -1,0 +1,97 @@
+// scss-docs-start gray-color-variables
+$white:    #FAFAFA !default;
+$gray-100: #F5F5F5 !default;
+$gray-200: #EDEDED !default;
+$gray-300: #DBDBDB !default;
+$gray-400: #B5B5B5 !default;
+$gray-500: #7A7A7A !default;
+$gray-600: #4A4A4A !default;
+$gray-700: #363636 !default;
+$gray-800: #242424 !default;
+$gray-900: #121212 !default;
+$black:    #0A0A0A !default;
+// scss-docs-end gray-color-variables
+
+
+// scss-docs-start color-variables
+$blue:    #485FC7 !default;
+$indigo:  #6610f2 !default;
+$purple:  #B86BFF !default;
+$pink:    #d63384 !default;
+$red:     #F14668 !default;
+$orange:  #FF470F !default;
+$yellow:  #FFE08A !default;
+$green:   #48C78E !default;
+$teal:    #00D1B2 !default;
+$cyan:    #3E8ED0 !default;
+$gray:    $gray-600 !default;
+// scss-docs-end color-variables
+
+
+// scss-docs-start theme-color-variables
+$primary-color:       $cyan !default;
+$secondary-color:     $yellow !default;
+$accent-color:        $silver !default;
+$valid-color:         $green !default;
+$info-color:          $blue !default;
+$attention-color:     $orange !default;
+$invalid-color:       $red !default;
+$alert-color:         $pink !default;
+// scss-docs-end theme-color-variables
+
+
+/* The contrast ratio to reach against white, to determine if color changes from "light" to "dark". Acceptable values for WCAG 2.0 are 3, 4.5 and 7. */
+/* See https://www.w3.org/TR/WCAG20/#visual-audio-contrast-contrast */
+$min-contrast-ratio:   4.5 !default;
+
+$dark-contrast:      $black;
+$light-contrast:     $white;
+
+$shadow-color:               $gray-800;
+$shadow-text-color:          .5rem .75rem .25rem $shadow-color;
+$shadow-box-color:           .5rem .75rem .25rem $shadow-color;
+
+/* Gradients */
+$gradient-tabs-bg: linear-gradient(320deg, transparent, rgba($white-rgb, .10) 20%, rgba($accent-rgb, .20) 35%, rgba($accent-rgb, .30) 50%, rgba($accent-rgb, .40) 65%);
+
+
+/* Link Utilities */
+$active-component-color:          $primary-color;
+$active-component-bg-color:       tint($primary-color, $background-tint-percentage);
+$active-component-border-color:   $active-component-color;
+
+$disabled-text-color:           $gray-500;
+$disabled-bg-color:             $gray-200;
+$disabled-border-color:         $gray-500;
+
+
+/* Utilities Typography */
+$body-color-color:         $gray-700;
+$body-bg-color:           lighten($primary-color, 5%);
+$muted-text-color:        shift-color($body-color-color, $muted-change-percentage);
+
+$site-title-color:        $primary-color;
+$page-title-color:        $secondary-color;
+$post-title-color:        $accent-color;
+$lead-text-color:         shift-color($post-title-color, $muted-change-percentage);
+$caption-text-color:      darken($body-color-color, 10%);
+$nav-text-color:          darken($secondary-color, 10%);
+$btn-text-color:          darken($body-color-color, 10%);
+$quote-text-color:        darken($primary-color, 10%);
+$footer-text-color:       darken($accent-color, 10%);
+
+
+/* Nav Utilities */
+$nav-link-text-color:           tint($secondary-color, $link-active-shade-percentage) !default;
+$nav-link-text-hover-color:     shift-color($nav-link-text-color, $link-active-shade-percentage);
+$nav-link-text-disabled-color:       $disabled-text-color;
+
+$tabs-active-bg-color:          $gradient-tabs-bg;
+
+/* Utilities Input*/
+$input-text-color:          $gray-500;
+$input-bg-color:            $gray-100;
+$input-border-color:        $gray-900;
+$input-text-focus-color:    $gray-800;
+$input-bg-focus-color:      $white;
+$input-border-focus-color:  $gray-100;

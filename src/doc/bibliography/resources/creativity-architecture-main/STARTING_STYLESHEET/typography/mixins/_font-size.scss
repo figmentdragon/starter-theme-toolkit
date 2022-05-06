@@ -1,0 +1,10 @@
+/*
+ * Output font size in px/rem
+ */
+
+ @mixin font-size( $size ) {
+ 	$pixels: #{$size}px;
+ 	$rems:  #{$size/10}rem;
+ 	font-size: $pixels;
+ 	font-size: $rems;
+ }

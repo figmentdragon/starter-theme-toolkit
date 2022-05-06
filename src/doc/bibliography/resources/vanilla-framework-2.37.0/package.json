@@ -1,0 +1,73 @@
+{
+  "author": {
+    "email": "webteam@canonical.com",
+    "name": "Canonical Webteam"
+  },
+  "bugs": {
+    "email": "webteam@canonical.com",
+    "url": "http://github.com/canonical-web-and-design/vanilla-framework/issues"
+  },
+  "description": "A simple, extendable CSS framework.",
+  "homepage": "https://vanillaframework.io/",
+  "keywords": [
+    "ubuntu",
+    "vanilla",
+    "framework",
+    "CSS",
+    "SASS",
+    "SCSS",
+    "mixin",
+    "module"
+  ],
+  "license": "LGPL-3.0",
+  "name": "vanilla-framework",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/canonical-web-and-design/vanilla-framework"
+  },
+  "scripts": {
+    "start": "yarn build && yarn serve",
+    "build": "yarn build-scss && yarn build-js",
+    "build-scss": "yarn run build-js && node-sass scss --functions sass-functions.js --output-style compressed --source-map true --source-map-contents true --output build/css && postcss --use autoprefixer --replace 'build/css/**/*.css' --map",
+    "build-js": "mkdir -p build/js/modules && cp node_modules/@canonical/cookie-policy/build/js/cookie-policy.js build/js/modules && cp node_modules/@canonical/latest-news/dist/latest-news.js build/js/modules",
+    "serve": "./entrypoint 0.0.0.0:${PORT}",
+    "test-scss": "node -e 'require(\"./tests/parker\").parkerTest()'",
+    "test-spelling": "mdspell templates/docs/**/*.md -r -n -a --en-gb",
+    "test": "yarn lint-scss && yarn lint-prettier &&  yarn test-spelling && yarn test-scss",
+    "lint-prettier": "prettier -c .",
+    "lint-scss": "stylelint 'scss/**/*.scss'",
+    "watch:scss": "node-sass scss --functions sass-functions.js --output-style compressed --source-map true --source-map-contents true --output build/css --watch",
+    "watch:scss:skip-standalone": "node-sass  scss/docs --functions sass-functions.js --output-style compressed --output build/css/docs --watch",
+    "watch": "yarn build && yarn watch:scss",
+    "clean": "rm -rf build docs/static/css node_modules/ yarn-error.log",
+    "percy": "percy exec -- node snapshots.js",
+    "icon-svgs-to-mixins": "node scripts/convert-svgs-to-icon-mixins.js icons"
+  },
+  "version": "2.37.0",
+  "files": [
+    "/scss",
+    "!/scss/docs"
+  ],
+  "dependencies": {
+    "@canonical/cookie-policy": "3.3.0",
+    "@canonical/latest-news": "1.2.0",
+    "autoprefixer": "10.3.7",
+    "node-sass": "6.0.1",
+    "postcss": "8.3.8",
+    "postcss-cli": "8.3.1"
+  },
+  "devDependencies": {
+    "@percy/script": "1.1.0",
+    "get-site-urls": "1.1.7",
+    "markdown-spellcheck": "1.3.1",
+    "parker": "0.0.10",
+    "prettier": "2.4.1",
+    "stylelint": "13.13.1",
+    "stylelint-config-prettier": "8.0.2",
+    "stylelint-config-standard": "22.0.0",
+    "stylelint-order": "4.1.0",
+    "stylelint-prettier": "1.2.0",
+    "stylelint-scss": "3.21.0",
+    "svgo": "2.7.0"
+  }
+}

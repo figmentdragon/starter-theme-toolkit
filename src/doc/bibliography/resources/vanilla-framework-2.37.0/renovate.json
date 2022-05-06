@@ -1,0 +1,14 @@
+{
+  "extends": ["config:base"],
+  "labels": ["Maintenance 🔨"],
+  "packageRules": [
+    {
+      "packagePatterns": ["*"],
+      "extends": ["schedule:weekly"],
+      "minor": {
+        "groupName": "all non-major dependencies",
+        "groupSlug": "all-minor-patch"
+      }
+    }
+  ]
+}

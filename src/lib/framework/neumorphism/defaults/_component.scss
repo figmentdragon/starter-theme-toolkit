@@ -1,0 +1,33 @@
+// Components
+
+$border-width:                .0625rem;
+$border-width-md:             0.125rem;
+$border-width-lg:             0.25rem;
+$border-width-xl:             0.375rem;
+$border-color-white:          $white;
+$border-color:                $gray-200;
+
+$border-radius:               .55rem;
+$xl-border-radius:            .95rem;
+$lg-border-radius:            .3rem;
+$border-radius-md:            .2rem;
+$sm-border-radius:            .1rem;
+$border-radius-pill:           2rem;
+$circle-radius:                50%;
+$organic-radius:               63% 37% 30% 70% / 50% 45% 55% 50%;
+
+$component-active-color:        $white;
+$component-active-bg:           theme-color("primary");
+$component-active-border-color: theme-color("primary");
+
+$component-hover-color:        $gray-300;
+$component-hover-bg:           $gray-300;
+$component-hover-border-color: $border-color-translucent;
+
+$caret-width:                 .3em;
+
+$transition-base:             all .2s ease;
+$transition-transform:        transform .2s ease;
+$transition-fade:             opacity .15s linear;
+$transition-collapse:         height .35s ease;
+$transition-tabs:             all 0.2s;

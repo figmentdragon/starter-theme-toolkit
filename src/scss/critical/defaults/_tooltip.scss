@@ -1,0 +1,24 @@
+// Tooltips
+
+
+// scss-docs-start tooltip-variable
+$tooltip-font-size: $sm-font-size !default;
+$tooltip-max-width: 200px !default;
+$tooltip-color: $white !default;
+$tooltip-bg: $black !default;
+$tooltip-border-radius: $border-radius !default;
+$tooltip-opacity: 0.9 !default;
+$tooltip-offset-y: $spacer * 0.25 !default;
+$tooltip-offset-x: $spacer * 0.5 !default;
+$tooltip-margin: 0 !default;
+
+$tooltip-arrow-width: 0.8rem !default;
+$tooltip-arrow-height: 0.4rem !default;
+$tooltip-arrow-color: $tooltip-bg !default;
+
+$tooltip-inner-color: #fff !default;
+$tooltip-inner-offset-y: 6px !default;
+$tooltip-inner-offset-x: 16px !default;
+$tooltip-inner-font-size: 14px !default;
+$tooltip-inner-background-color: #6d6d6d !default;
+$tooltip-inner-border-radius: 0.25rem !default;

@@ -1,0 +1,70 @@
+// scss-docs-start badges-colors-map
+$badges: () !default;
+$badges: map-merge(
+  (
+    'primary': (
+      'background-color': hsl(217, 88.8%, 90%),
+      'text-color': hsl(217, 88.8%, 35%),
+      'icon-color': hsl(217, 88.8%, 65%),
+    ),
+    'secondary': (
+      'background-color': hsl(277, 98%, 90%),
+      'text-color': hsl(277, 98%, 35%),
+      'icon-color': hsl(277, 98%, 55%),
+    ),
+    'success': (
+      'background-color': hsl(144, 70%, 87%),
+      'text-color': hsl(144, 70%, 15%),
+      'icon-color': hsl(144, 70%, 35%),
+    ),
+    'danger': (
+      'background-color': hsl(350, 90.3%, 92%),
+      'text-color': hsl(350, 90.3%, 25%),
+      'icon-color': hsl(350, 90.3%, 55%),
+    ),
+    'warning': (
+      'background-color': hsl(40, 100%, 88%),
+      'text-color': hsl(40, 80%, 15%),
+      'icon-color': hsl(40, 100%, 40%),
+    ),
+    'info': (
+      'background-color': hsl(195, 83.3%, 90%),
+      'text-color': hsl(195, 83.3%, 18%),
+      'icon-color': hsl(195, 83.3%, 45%),
+    ),
+    'light': (
+      'background-color': hsl(0, 0%, 96%),
+      'text-color': hsl(0, 0%, 25%),
+      'icon-color': hsl(0, 0%, 55%),
+    ),
+    'dark': (
+      'background-color': hsl(0, 0%, 16%),
+      'text-color': hsl(0, 0%, 96%),
+      'icon-color': hsl(0, 0%, 85%),
+    ),
+  ),
+  $badges
+);
+// scss-docs-end badges-colors-map
+
+// Badges
+
+// scss-docs-start badge-variable
+$badge-font-size: 0.75em !default;
+$badge-font-weight: $bold-font-weight !default;
+$badge-color: $white !default;
+$badge-offset-y: 0.35em !default;
+$badge-offset-x: 0.65em !default;
+
+$badge-dot-border-radius: 4.5px !default;
+$badge-dot-height: 9px !default;
+$badge-dot-width: $badge-dot-height !default;
+$badge-dot-margin-left: -0.3125rem !default;
+
+$badge-notification-font-size: 0.6rem !default;
+$badge-notification-margin-top: -0.1rem !default;
+$badge-notification-margin-left: -0.5rem !default;
+$badge-notification-offset-y: 0.2em !default;
+$badge-notification-offset-x: 0.45em !default;
+
+$badge-border-radius: $border-radius !default;

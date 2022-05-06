@@ -1,0 +1,14 @@
+/* Border Width */
+$border-widths: (
+ 1: 1px,
+ 2: 2px,
+ 3: 3px,
+ 4: 4px,
+ 5: 5px
+);
+
+$border-width-xs: 1px * $size-xs;
+$sm-border-width: 2px * $size-sm; /* 1.75 */
+$md-border-width: 3px * $size-md;
+$border-width-lg: 4px * $size-lg;
+$border-width-xl: 5px * $size-xl;

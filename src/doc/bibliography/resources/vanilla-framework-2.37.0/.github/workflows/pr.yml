@@ -1,0 +1,54 @@
+name: PR
+
+on: pull_request
+
+env:
+  PORT: 8765
+  SECRET_KEY: insecure_test_key
+
+jobs:
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 12
+      - run: yarn install
+      - run: yarn build
+      - run: yarn test
+      - name: Build import.css test file without sourcemaps
+        run: npx node-sass scss/standalone/import.scss --functions sass-functions.js --output-style compressed --output build/css/standalone
+      - name: Check if import test file exists but is empty
+        run: test -f build/css/standalone/import.css -a ! -s build/css/standalone/import.css
+      - name: Show size of the build file
+        run: stat -c '%s' build/css/build.css
+
+  dart:
+    name: Test build with dart-sass
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 12
+      - run: yarn install
+      - run: yarn add sass
+      - run: npx sass scss/build.scss
+
+  docker:
+    name: Build and run
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Build Docker image
+        run: DOCKER_BUILDKIT=1 docker build --build-arg BUILD_ID=test --tag testrun .
+      - name: Run server with Docker
+        run: docker run -p ${PORT}:80 --env SECRET_KEY=${SECRET_KEY} testrun &
+      - name: Check server status
+        run: curl localhost:${PORT}/_status/check -I
+      - name: Install linkchecker
+        run: sudo pip install LinkChecker
+      - name: Check internal links
+        run: linkchecker --ignore-url /search http://localhost:${PORT}

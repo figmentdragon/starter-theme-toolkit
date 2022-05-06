@@ -1,0 +1,71 @@
+//--------------------------------------------------------------
+// # Site Footer
+//--------------------------------------------------------------
+
+.footer {}
+
+.site-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 99;
+  height: 60px;
+}
+.site-info {
+
+}
+
+footer.site-footer {
+  position: fixed;
+  right: 0;
+  bottom: 2vh;
+  left: 0;
+  height: 2vh;
+  width: 100%;
+  color: $primary;
+  text-align: right;
+}
+.site-footer .container {
+  text-align: right;
+  position: relative;
+}
+
+div.site-info.container {
+  text-align: right;
+  position: relative;
+}
+
+.footer-inner {
+  margin-top: 80px;
+  border-top: 1px solid #ababab;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-left: 80px;
+  margin-right: 50px;
+  font-size: 12px;
+}
+.footer-inner .title {
+  font-size: 14px;
+  font-weight: 700;
+}
+.footer-inner ul {
+  list-style: none;
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+}
+
+.page-template-tpl-home .site-footer {
+    -ms-transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+    transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+}
+.page-template-tpl-home .site-footer.fp-show {
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}

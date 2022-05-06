@@ -1,0 +1,26 @@
+// container mixins
+
+@mixin make-container($type, $display, $overflow){
+  @include clearfix;
+  @include box-sizing($type);
+  display: $display;
+  overflow: $overflow;
+}
+
+@mixin text-container($type) {
+  @include clear-fix;
+  @include box-sizing($type);
+  align-items: left;
+  justify-content: flex-start;
+  padding-top: $offset-y;
+  padding-bottom: $offset-y;
+}
+
+// container mixins
+@mixin container($offset-y, $offset-x) {
+  @include container-base;
+  padding-top: $offset-x;
+  padding-right: $offset-y;
+  padding-bottom: $offset-x;
+  padding-left: $offset-y;
+}

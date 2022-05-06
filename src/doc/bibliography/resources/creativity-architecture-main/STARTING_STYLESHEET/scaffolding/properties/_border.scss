@@ -1,0 +1,34 @@
+/* ____________________________________ BORDERS */
+  $border-width:           1px !default;
+  $border-radius:          .15rem !default;
+  $border-color:           shade($accent, $border-percentage);
+
+@import "border/width";
+@import "border/radius";
+
+/* WIDTH */
+$border-width-focus:       $border-width-lg;
+$btn-border-radius:        $border-radius-sm;
+$btn-focus-width:          $border-width-focus;
+
+/* RADIUS */
+$border-radius-pill:       50rem;
+
+$thumbnail-border-radius:  calc($border-radius * divide($md, 2));
+$card-border-radius-inner: $border-radius-sm;
+$button-radius:            $border-radius-lg;
+
+.top-to-bottom {
+  border-width: 1px;
+  border-style: solid;
+  -webkit-border-image:
+    -webkit-gradient(linear, 0 0, 0 100%, from($brown), to(rgba($chocolate, 0)) to transparent) 1 100%;
+  -webkit-border-image:
+    -webkit-linear-gradient($brown, rgba($chocolate, 0), transparent) 1 100%;
+  -moz-border-image:
+    -moz-linear-gradient($brown, rgba($chocolate, 0), transparent) 1 100%;
+  -o-border-image:
+    -o-linear-gradient($brown, rgba($chocolate, 0), transparent) 1 100%;
+  border-image:
+    linear-gradient(to bottom, $brown, rgba($chocolate, 0), transparent) 1 100%;
+}

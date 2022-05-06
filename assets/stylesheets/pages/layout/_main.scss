@@ -1,0 +1,82 @@
+$duration: .7s;
+
+
+
+  h4.page-title,
+  h4.site-description,
+  h4.tag {
+    margin-top: -1vh;
+    margin-right: 6vw;
+    margin-left: 50vh;
+
+    font-family: $primary-font;
+    text-align: right;
+
+    outline: 2px solid yellow;
+  }
+
+
+
+main#primary.site-main {
+  display: block;
+  margin: 0;
+  padding: 1vh 1vw 1vh 4vw;
+  height: 100%;
+  width: 100%;
+  @include border-start-radius($xl-border-radius);
+  @include elevation(10);
+  background-color: white(.3);
+  overflow: hidden;
+  transition: background-color $duration;
+  *zoom: 1;
+
+  header.page-title{
+    background-image: $gradient-secondary;
+    outline: 2px solid red;
+    top: 2.25vh;
+    right: 0;
+    left: 3.25vw;
+    height: 3vh;
+    width: 100%;
+  }
+
+  :before,
+  :after {
+    display: table;
+    content: "";
+    line-height: 0;
+  }
+  :after {
+    clear: both;
+  }
+}
+
+.site-description {
+    font-family: $primary-font;
+}
+
+
+.site-main .comment-navigation,
+.site-main .posts-navigation,
+.site-main .post-navigation {
+	margin: 0 0 1.5em;
+}
+
+.comment-navigation .nav-links,
+.posts-navigation .nav-links,
+.post-navigation .nav-links {
+	display: flex;
+}
+
+.comment-navigation .nav-previous,
+.posts-navigation .nav-previous,
+.post-navigation .nav-previous {
+	flex: 1 0 50%;
+}
+
+.comment-navigation .nav-next,
+.posts-navigation .nav-next,
+.post-navigation .nav-next {
+	text-align: end;
+	flex: 1 0 50%;
+}

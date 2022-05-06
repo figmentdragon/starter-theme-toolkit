@@ -1,0 +1,48 @@
+/**
+ * partials/header
+ * ---
+ */
+
+
+// Header container
+.header {
+  width: 220px;
+  bottom: 0;
+  top: 0;
+  text-align: right;
+  z-index: 9;
+}
+
+// Logo
+.logo {}
+
+.logo-img {}
+
+
+.affix{
+  position: fixed;
+}
+.header-text {
+  margin-bottom: 50px;
+}
+.header-text blockquote {
+  font-size: 16px;
+  padding-left: 50px;
+}
+.header-text blockquote:before {
+  font-size: 30px;
+}
+
+.table {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+.table-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.site-description{
+  writing-mode: vertica-lr;
+}

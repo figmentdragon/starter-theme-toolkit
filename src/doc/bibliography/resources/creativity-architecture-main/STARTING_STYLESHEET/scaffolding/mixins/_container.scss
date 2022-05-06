@@ -1,0 +1,62 @@
+@mixin grid-container($gutter: $container-offset-x) {
+  display: grid;
+  grid-template-columns: $grid-columns;
+  grid-template-rows: $grid-row-columns;
+  grid-column-gap: $grid-gutter;
+  grid-row-gap: $grid-gutter;
+  width: 100%;
+  max-width: $grid-max-width;
+  padding-right: ($gutter-x * .5); // stylelint-disable-line function-disallowed-list
+  padding-left: ($gutter-x * .5); // stylelint-disable-line function-disallowed-list
+   margin: 0 auto;
+}
+
+// Container widths
+//
+// Set the container width, and override it for fixed navbars in media queries.
+@if $enable-container-classes {
+  // Single container class with breakpoint max-widths
+  .container,
+  // 100% wide container at all breakpoints
+  .container-fluid {
+    @include grid-container($gutter: $container-offset-x);
+  }
+
+  // Responsive containers that are 100% wide until a breakpoint
+  @each $breakpoint, $container-max-width in $container-max-widths {
+    .container-#{$breakpoint} {
+      @extend .container-fluid;
+    }
+
+    @include media-breakpoint-up($breakpoint, $grid-breakpoints) {
+      %responsive-container-#{$breakpoint} {
+        max-width: $container-max-width;
+      }
+
+      // Extend each breakpoint which is smaller or equal to the current breakpoint
+      $extend-breakpoint: true;
+
+      @each $name, $width in $grid-breakpoints {
+        @if ($extend-breakpoint) {
+          .container#{breakpoint-infix($name, $grid-breakpoints)} {
+            @extend %responsive-container-#{$breakpoint};
+          }
+
+          // Once the current breakpoint is reached, stop extending
+          @if ($breakpoint == $name) {
+            $extend-breakpoint: false;
+          }
+        }
+      }
+    }
+  }
+}
+
+// For each breakpoint, define the maximum width of the container in a media query
+@mixin make-container-max-widths($max-widths: $container-max-widths) {
+  @each $breakpoint, $container-max-width in $max-widths {
+    @include media-breakpoint-up($breakpoint) {
+      max-width: $container-max-width;
+    }
+  }
+}

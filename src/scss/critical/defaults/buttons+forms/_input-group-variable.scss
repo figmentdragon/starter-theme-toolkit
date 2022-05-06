@@ -1,0 +1,10 @@
+// scss-docs-start input-group-variable
+$input-group-addon-offset-x:            $input-btn-offset-x;
+$input-group-addon-font-weight:         $bolder-font-weight;
+$input-group-addon-color:               mix($gray-400, $info, $color-interval);
+$input-group-addon-bg:                  mix($gray-200, $info, $color-interval);
+$input-group-addon-border-color:        mix($gray-700, $info, $color-interval);
+$input-group-text-bgc                        : #e0e0e0 !default;
+$input-group-form-control-px                 : .75rem !default;
+$input-group-form-control-py                 : .375rem !default
+// scss-docs-end input-group-variable

@@ -1,0 +1,68 @@
+
+$nav-link-padding-y:                .25rem;
+$nav-link-padding-x:                .75rem;
+$nav-link-color:                    $body-color;
+$nav-link-hover-color:              $dark;
+$nav-link-active-color:             $gray-700;
+
+$nav-pills-padding-y:               .75rem;
+$nav-pills-padding-x:               .85rem;
+
+$nav-pills-space-x:                 2rem;
+$nav-pills-border-circle:           50%;
+
+$nav-pills-bg:                      $primary;
+$nav-pills-border-width:            1px;
+$nav-pills-border-color:            $light;
+$nav-pills-border-radius:           $border-radius;
+
+$nav-pills-link-hover-color:        $dark;
+$nav-pills-link-active-color:       $dark;
+$nav-pills-active-border-color:     $light;
+$nav-pills-link-active-bg:          $primary;
+
+//@import 'defaults/progress';
+$progress-xl-size: .9rem;
+$progress-lg-size: .7rem;
+
+//@import 'defaults/navbar';
+$navbar-transition:                 cubic-bezier(0.34, 1.45, 0.7, 1);
+$navbar-padding-y:                  1rem;
+$navbar-padding-x:                  1rem;
+
+$navbar-nav-link-padding-x:         1rem;
+$navbar-nav-link-padding-y:         1rem;
+
+$navbar-nav-link-font-size:         1rem;
+$navbar-nav-link-font-weight:       400;
+$navbar-nav-link-text-transform:    normal;
+$navbar-nav-link-letter-spacing:    0;
+$navbar-nav-link-border-radius:     $border-radius;
+
+$navbar-dark-bg:                    transparent;
+$navbar-dark-hover-bg:              rgba(255, 255, 255, .1);
+$navbar-dark-active-bg:             rgba(255, 255, 255, .1);
+$navbar-dark-color:                 $dark;
+$navbar-dark-hover-color:           $black;
+$navbar-dark-active-color:          rgba($white, .65);
+$navbar-dark-disabled-color:        rgba($white, .25);
+$navbar-dark-toggler-border-color:  transparent;
+
+$navbar-light-bg:                   transparent;
+$navbar-light-hover-bg:             $dark;
+$navbar-light-active-bg:            $body-color;
+$navbar-light-color:                $body-color;
+$navbar-light-hover-color:          $dark;
+$navbar-light-active-color:         $body-color;
+$navbar-light-disabled-color:       rgba($gray-800, .9);
+$navbar-light-toggler-icon-bg:      str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{$navbar-light-color}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"), "#", "%23");
+$navbar-light-toggler-border-color: transparent;
+
+$navbar-dropdown-item-font-weight:  $normal-font-weight;
+$navbar-dropdown-item-font-size:    1rem;
+
+//@import 'defaults/nav-tab';
+
+$nav-tabs-border-color:             $gray-200;
+$nav-tabs-link-active-color:        $primary;
+$nav-tabs-link-active-bg:           $gray-100;

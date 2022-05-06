@@ -1,0 +1,59 @@
+
+// Dropdowns
+//
+// Dropdown menu container and content !default;
+
+// scss-docs-start dropdown-variable
+$dropdown-min-width: 10rem !default;
+$dropdown-offset-x: 0 !default;
+$dropdown-offset-y: 0.5rem !default;
+$dropdown-spacer: 0.125rem !default;
+$dropdown-font-size: $base-font-size !default;
+$dropdown-color: #212529 !default;
+$dropdown-bg: $white !default;
+$dropdown-border-radius: $border-radius !default;
+$dropdown-border-width: $border-width !default;
+
+$dropdown-border-color: rgba($black, 0.15) !default;
+$dropdown-divider-bg: $dropdown-border-color !default;
+$dropdown-inner-border-radius: subtract($dropdown-border-radius, $dropdown-border-width) !default;
+
+$dropdown-divider-margin-y: $spacer * 0.5 !default;
+$dropdown-margin-top: 0.125rem !default;
+$dropdown-box-shadow: $box-shadow !default;
+
+$dropdown-item-border-radius: 0.5rem !default;
+$dropdown-item-offset-y: $spacer * 0.25 !default;
+$dropdown-item-offset-x: $spacer !default;
+
+$dropdown-link-color: $gray-900 !default;
+$dropdown-link-text-hover: shade-color($dropdown-link-color, 10%) !default;
+$dropdown-link-hover-bg: $gray-200 !default;
+
+$dropdown-link-active-color: $component-active-color !default;
+$dropdown-link-active-bg: $component-active-bg !default;
+
+$dropdown-state-color: #16181b !default;
+$dropdown-state-background-color: #eee !default;
+
+$dropdown-menu-animated-animation-duration: 0.55s !default;
+$dropdown-menu-animated-animation-timing-function: ease !default;
+
+$dropdown-header-color: $gray-600 !default;
+$dropdown-header-padding: $dropdown-offset-y $dropdown-item-offset-x !default;
+// scss-docs-end dropdown-variable
+
+// scss-docs-start dropdown-dark-variable
+$dropdown-dark-color: $gray-300 !default;
+$dropdown-dark-bg: $gray-800 !default;
+$dropdown-dark-border-color: $dropdown-border-color !default;
+$dropdown-dark-divider-bg: $dropdown-divider-bg !default;
+$dropdown-dark-box-shadow: null !default;
+$dropdown-dark-link-color: $dropdown-dark-color !default;
+$dropdown-dark-link-text-hover: $white !default;
+$dropdown-dark-link-hover-bg: rgba($white, 0.15) !default;
+$dropdown-dark-link-active-color: $dropdown-link-active-color !default;
+$dropdown-dark-link-active-bg: $dropdown-link-active-bg !default;
+$dropdown-dark-link-disabled-color: $gray-500 !default;
+$dropdown-dark-header-color: $gray-500 !default;
+// scss-docs-end dropdown-dark-variable

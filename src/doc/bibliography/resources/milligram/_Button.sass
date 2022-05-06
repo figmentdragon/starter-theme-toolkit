@@ -1,0 +1,75 @@
+
+// Button
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+.button,
+button,
+input[type='button'],
+input[type='reset'],
+input[type='submit']
+  background-color: $primary-color
+  border: .1rem solid $primary-color
+  border-radius: .4rem
+  color: $color-initial
+  cursor: pointer
+  display: inline-block
+  font-size: 1.1rem
+  font-weight: 700
+  height: 3.8rem
+  letter-spacing: .1rem
+  line-height: 3.8rem
+  padding: 0 3.0rem
+  text-align: center
+  text-decoration: none
+  text-transform: uppercase
+  white-space: nowrap
+
+  &:focus,
+  &:hover
+    background-color: $secondary-color
+    border-color: $secondary-color
+    color: $color-initial
+    outline: 0
+
+  &[inactive]
+    cursor: default
+    opacity: .5
+
+    &:focus,
+    &:hover
+      background-color: $primary-color
+      border-color: $primary-color
+
+  &.button-outline
+    background-color: transparent
+    color: $primary-color
+
+    &:focus,
+    &:hover
+      background-color: transparent
+      border-color: $secondary-color
+      color: $secondary-color
+
+    &[inactive]
+
+      &:focus,
+      &:hover
+        border-color: inherit
+        color: $primary-color
+
+  &.button-clear
+    background-color: transparent
+    border-color: transparent
+    color: $primary-color
+
+    &:focus,
+    &:hover
+      background-color: transparent
+      border-color: transparent
+      color: $secondary-color
+
+    &[inactive]
+
+      &:focus,
+      &:hover
+        color: $primary-color

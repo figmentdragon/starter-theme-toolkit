@@ -1,0 +1,22 @@
+Good day {{username}},
+
+Thank you for your donation into the Funraise.me! donation pool. By donating into the Funraise.me! pool, you will receive donation credits on Funraise.me! which you can pledge towards any fundraisers you'd like. Credits will not be deducted from your account until these fundraisers are completed and your donations are distributed to the respective charities.
+
+This e-mail serves as a tax receipt for your donation. Under the United States Internal Revenue Code, donations are tax-deductible charitable contributions. Please see Internal Revenue Service Publications 526 and 1771 for official Federal government information on charitable contributions. Our tax identification number is 45-4887919. For reference purposes, you did not receive anything of value from Funraise.me! in return for this donation.
+
+The breakdown of your donation is as follows:
+
+Transaction Date: {{date}}
+Payment Amount: ${{amount}}
+Donation Credit: ${{credit}}
+Tip Amount: ${{tip}}
+Credit Card Type: {{cctype}}
+Credit Card Number: *{{last4}}
+Funraise.me! Transaction Fee: ${{fee}}
+Stripe Transaction Fee: ${{stripe_fee}}
+Funraise.me! Transaction ID: {{_id}}
+
+For more information on how our fees work, please visit https://funraise.me/about/fees. If you have any questions, please contact us at team@funraise.me.
+
+Thank you,
+Funraise.me!

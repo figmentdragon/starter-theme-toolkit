@@ -1,0 +1,244 @@
+/**
+ * 15.8 - >= 1366px
+ */
+
+@include media(wide) {
+	/* Woocommerce Styles */
+	.woocommerce-shorting-wrapper {
+		margin: 0 0 49px;
+	}
+
+	ul.products li.product {
+		margin: 0 auto 42px;
+	}
+
+	.woocommerce-message,
+	.woocommerce-info,
+	.woocommerce-error,
+	.woocommerce-noreviews,
+	p.no-comments {
+		margin-bottom: 2.882352941176471em;
+	}
+
+	table.shop_table_responsive tr td {
+		padding: 14px 28px;
+	}
+
+	.woocommerce-tabs ul.tabs {
+		margin: 63px 0 0
+	}
+
+	.woocommerce-pagination {
+		margin-top: 7px;
+	}
+
+	/* Woocommerce Styles End */
+
+	#primary-search-wrapper > .social-navigation {
+ 		display: block;
+ 	}
+
+ 	.single .site-main .hentry,
+ 	.page .site-main .hentry {
+ 		margin-bottom: 56px;
+ 	}
+
+ 	.single .site-main .entry-footer,
+ 	.page .site-main .entry-footer {
+ 	    margin-top: 56px;
+ 	}
+
+	.comment-respond {
+		padding: 56px;
+	}
+
+	.comments-area {
+	    padding-top: 56px;
+	}
+
+	#footer-instagram .widget-title,
+	.page-title,
+	.entry-content h1,
+	.entry-summary h1,
+	.comment-content h1,
+	.textwidget h1 {
+		font-size: 49px;
+		font-size: 3.0625rem;
+	}
+
+	.entry-content h2,
+	.entry-summary h2,
+	.comment-content h2,
+	.textwidget h2,
+	body:not(.home) .header-media .section-title {
+		font-size: 43px;
+		font-size: 2.6875rem;
+	}
+
+	.entry-content h3,
+	.entry-summary h3,
+	.comment-content h3,
+	.textwidget h3 {
+		font-size: 32px;
+		font-size: 2rem;
+	}
+
+	.entry-content h4,
+	.entry-summary h4,
+	.comment-content h4,
+	.textwidget h4 {
+		font-size: 26px;
+		font-size: 1.635rem;
+	}
+
+	#contact-details-section.section {
+        padding: 91px 0 35px;
+    }
+
+	#footer-instagram .widget-title,
+	.site-content,
+	.section {
+		padding: 91px 0 56px;
+	}
+	.events-section.section{
+		padding-bottom: 49px;
+	}
+	.author-info {
+		margin-top: 56px;
+	}
+
+	.hero-content-wrapper .entry-container {
+		padding: 49px 0 49px 84px;
+	}
+
+	.content-align-left .hero-content-wrapper  .has-post-thumbnail .entry-container {
+		padding: 49px 84px 49px 0;
+	}
+
+	#gallery-section .tiled-gallery .tiled-gallery-item a:after {
+		font-size: 20px;
+		font-size: 1.25rem;
+	    height: 50px;
+	    padding: 15px;
+	    width: 50px;
+	}
+
+	caption,
+	th,
+	td {
+	    padding: 0.667em 1em;
+	}
+
+	#contact-section .section-content-wrapper .entry-summary,
+	#contact-section .section-content-wrapper .entry-content {
+		margin: 42px 0 0;
+	}
+
+	.archive-post-wrap .hentry {
+		margin-bottom: 77px;
+		padding-bottom: 77px;
+	}
+
+	.archive-post-wrap .post-thumbnail {
+		margin-bottom: 42px;
+	}
+
+	.site-content .content-area .hentry .post-thumbnail + .entry-container {
+		padding-top: 56px;
+	}
+
+	.slider-logo,
+    .site-header-logo {
+	    max-width: 450px;
+	}
+
+    #sticky-playlist-section .mejs-sticky-playlist-container {
+	    -webkit-box-flex: 0;
+	    -ms-flex: 0 1 75%;
+	    flex: 0 1 75%;
+	}
+
+	 .playlist-section .section-content-wrapper .entry-container .entry-content {
+		padding-left: 40px;
+	}
+
+	.playlist-content-wrapper .mejs-button.mejs-playpause-button {
+		position: absolute;
+		left: -90px;
+	}
+
+	.playlist-content-wrapper .entry-container {
+		padding: 0 0 0 70px;
+	}
+
+	.playlist-section .mejs-playpause-button {
+		width: 65px;
+		padding: 23px;
+		height: 65px;
+		background-color: #222;
+		text-align: center;
+	}
+
+    .scroll-down {
+        bottom: 36px;
+        right: 36px;
+    }
+
+
+	.app-section .entry-container {
+	    padding: 70px 50px;
+	}
+
+	.events-section.single-layout .date-week-day  {
+        font-size: 56px;
+        font-size: 3.5rem;
+    }
+
+    .category-content-section .entry-container {
+	    bottom: 21px;
+	    left: 21px;
+	    right: 21px;
+	    width: calc(100% - 42px);
+	}
+	.contact-section .hentry.contact-us-form {
+        padding-bottom: 91px;
+        padding-top: 91px;
+    }
+	#countdown-section.text-aligned-center .content-wrapper .content-right{
+		padding-right: 0;
+	}
+	#footer-instagram .instagram-button {
+		margin-bottom: 91px;
+	}
+
+	#testimonial-content-section .section-content-wrapper .entry-content:before {
+
+		position: absolute;
+		top: -20px;
+	}
+	#testimonial-content-section .owl-nav {
+		padding: 0 70px;
+	}
+
+
+	#feature-slider-section .entry-container .content-wrapper, 
+   .custom-header-content-wrapper {
+        max-width: 645px;
+    }
+	.search-content .search-container input {
+        font-size: 56px;
+        font-size: 3.5rem;
+    }
+	.search-content button svg.icon {
+		width: 26px;
+		height: 26px;
+	}
+	.search-content .search-container {
+		margin-bottom: 56px;
+	}
+
+	.site-main nav.post-navigation {
+		padding: 70px 0;
+	}
+
+}

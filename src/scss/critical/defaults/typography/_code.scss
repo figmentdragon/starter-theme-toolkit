@@ -1,0 +1,18 @@
+// Code
+$code-percentage: 5%;
+$code-font-size:                    $small-font-size;
+$code-color:                        mix($gray-400, $pink, $code-percentage);
+$code-bg: mix($gray-200, $pink, $code-percentage);
+
+$kbd-offset-y:                     .1875rem;
+$kbd-offset-x:                     .375rem;
+$kbd-font-size:                     $code-font-size;
+$kbd-color:                         var(--#{$prefix}body-bg);
+$kbd-bg:                            var(--#{$prefix}body-color);
+$nested-kbd-font-weight:            null; // Deprecated in v5.2.0, removing in v6
+
+$pre-percentage: 7%;
+$pre-color:                         mix($gray-400, $pink, $pre-percentage);
+$pre-border-width:                  2;
+$pre-border-color: mix($gray-700, $pink, $pre-percentage);
+$pre-bg:          mix($gray-200, $pink, $pre-percentage);

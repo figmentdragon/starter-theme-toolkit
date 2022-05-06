@@ -1,0 +1,11 @@
+@include media(tablet-width) {
+
+    .home.admin-bar .custom-header {
+        height: calc( 100vh - 32px );
+    }
+
+    #clock > .count-down .countdown-number {
+        font-size: 42px;
+        font-size: 2.625rem;
+    }
+}

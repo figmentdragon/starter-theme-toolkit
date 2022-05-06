@@ -1,0 +1,59 @@
+.commentlist,
+.comment-list,
+.children {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.commentlist,
+.comment-list {
+  .children { /* Nested comments */
+    list-style: none;
+    margin: 0 0 0 6%;
+    padding: 0;
+  }
+  .comment {
+    border-top: 1px solid #e9e9e9;
+  }
+  .comment-respond {
+    margin-bottom: 50px;
+  }
+  li {
+    list-style: none;
+    :before {
+      display: none;
+    }
+    :last-of-type { /* Do you want to style the last comment differently, such as remove borders? */
+    }
+  }
+}
+
+.commentlist li,
+.comment-list li {
+	list-style: none;
+
+  :before{
+    display: none;
+  }
+
+  :last-of-type { /* Do you want to style the last comment differently, such as remove borders? */
+  }
+}
+
+.commentlist li.comment,
+.comment-list li.comment {  /* Individual top-level comments */
+
+}
+.commentlist li.pingback
+.comment-list li.pingback {  /* Individual top-level pingbacks */
+
+}
+.commentlist .children li,
+.comment-list .children li { /* Contains individual nested comments */
+}
+
+.children article.comment,
+.children li.pingback { /* Nexted comments and pingbacks */
+	padding-top: 1.0em;
+}
